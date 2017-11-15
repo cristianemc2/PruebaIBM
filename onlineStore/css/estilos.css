@@ -1,0 +1,78 @@
+html, body{
+	height: 100%;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*cover*/
+#cover{
+	background: #222 center center no-repeat;
+	background-size: cover;
+	color: white;
+	height: 30%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+/*cover Solicitud*/
+#coverSolicitud{
+	background: #222 center center no-repeat;
+	background-size: cover;
+	color: white;
+	height: 30%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+
+#cover-texto{
+	width: 100%;
+}
+
+#cover-texto .form-inline{
+	padding: Srem 0;
+}
+
+.contenido-seccion{
+	padding: Srem 0;
+}
+
+#acerca-de{
+	background: center center no-repeat;
+}
+
+.texto-acerca-de{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 1.875rem;
+}
+
+.sally-navbar{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: white;
+}
+
+.sally-navbar .navbar-nav>a{
+	background: #3498db;
+	color: white;
+}
+
+.sally-navbar .sally-cart{
+	padding-left: 10px;
+	border-left: 1px solid #969696;
+}
+
+.sally.navbar .sally-form-btn{
+	margin-right: 7px
+}
+
+.sally-navbar .sally-btn-cart{
+	background: #3498db;
+	color: white;
+	border-radius: 3px;
+}

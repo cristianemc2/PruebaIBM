@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Tienda Online</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section id="coverSolicitud">
+  	<div id="cover-texto">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-12">
+  					<h1 class="display">Portobella - Pago contra entrega</h1>
+  					<p>Paga en efectivo (Ten la cantidad de dinero exacta) para nuestro transportador, cuando te entreguen tus productos.</p>
+   					<p>Recuerda: Este método de pago sólo está disponible para algunas ciudades (Ver ciudades disponibles) y no realizamos entregas los domingos y días festivos.</p> 					
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Menú</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          COLECCIÓN
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Camisas formales</a>
+	          <a class="dropdown-item" href="#">Pantalones formales</a>
+	          <a class="dropdown-item" href="#">Chaquetas</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="frmSolicitud.html">Realiza tu pedido</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Deshabilitado</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+	      <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+	      <div class="sally-cart form-group">
+	        <a href="#" class="sally-btn-cart btn">
+	    	  <span class="fa fa-shopping-cart"></span>
+	        </a>
+	      </div>
+	    </form>
+	  </div>
+  </nav>
+  <!-- CARRUSEL -->
+  <section id="carrusel">
+	<form>
+	  <div class="row">
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer01">Nombres</label>
+	      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombres" required>
+	    </div>
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer02">Apellidos</label>
+	      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Apellidos" required>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer03">Tipo de identificación</label>
+	      <select class="form-control is-valid" id="validationServer03" required>
+            <option selected>Seleccione...</option>
+            <option value="1">CC</option>
+            <option value="2">TI</option>
+            <option value="3">CE</option>
+          </select>
+	    </div>
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer04">Número de identificación</label>
+	      <input type="text" class="form-control is-valid" id="validationServer04" placeholder="Número de identificación" required>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer05">Tipo de Ropa</label>
+	      <select class="form-control is-valid" id="validationServer05" required>
+            <option selected>Seleccione...</option>
+            <option value="1">Camisas formales</option>
+            <option value="2">Pantalones formales</option>
+            <option value="3">Chaquetas</option>
+          </select>
+	    </div>
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer06">Cantidad</label>
+	      <select class="form-control is-valid" id="validationServer06" required>
+            <option selected>Seleccione...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>            
+          </select>
+	    </div>
+	  </div>	  
+	  <div class="row">
+	    <div class="col-md-6 mb-3">
+	      <label for="validationServer07">Dirección de entrega</label>
+	      <input type="text" class="form-control is-valid" id="validationServer07" placeholder="Dirección de entrega" required>
+	    </div>
+	    <div class="col-md-3 mb-3">
+	      <label for="validationServer08">Fecha de entrega</label>
+          <input type="text" class="form-control is-valid" id="validationServer08" size="16" value="" readonly>
+          <span class="add-on"><i class="icon-th"></i></span>
+    	</div>
+	  </div>
+
+	  <button class="btn btn-primary" type="submit">Comprar</button>
+	</form>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/utilidades.js"></script>            
+  <script type="text/javascript">
+	document.getElementById("validationServer08").value = fechaEntrega();
+  </script>
+</body>
+</html>

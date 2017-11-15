@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>osb.rest</groupId>
+	<artifactId>OSB.REST.FACADE</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>OSB.REST.FACADE</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!--DEPENDENCIAS DEL PROYECTO-->
+		<dependency>
+			<groupId>osb.rest</groupId>
+			<artifactId>OSB.REST.JSON</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>osb.rest</groupId>
+			<artifactId>OSB.REST.BUSINESS</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<optional>true</optional>
+		</dependency>
+		<!--DEPENDENCIAS EXTERNAS -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.6.0</version>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>OSB.REST.FACADE</finalName>
+	</build>
+</project>

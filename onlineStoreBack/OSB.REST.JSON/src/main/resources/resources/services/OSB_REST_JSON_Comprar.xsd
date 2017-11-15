@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.portobella.com/onlineStore/services/Comprar" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portobella.com/onlineStore/services/Comprar">
+
+    <element name="ComprarServiceRequest" type="tns:ComprarServiceRequestType"></element>
+
+    <complexType name="ComprarServiceRequestType">
+    	<sequence>
+    		<element name="comprarRQ" type="tns:ComprarRQType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ComprarRQType">
+    	<sequence>
+    		<element name="nombres" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="apellidos" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="tipoIdentificacion" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="numeroIdentificacion" type="time"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="tipoRopa" type="tns:TipoRopaType"
+    			minOccurs="1" maxOccurs="unbounded">
+    		</element>
+    		<element name="direccionEntrega" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="fechaEntrega" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="ComprarServiceResponse" type="tns:ComprarServiceResponseType"></element>
+
+    <complexType name="ComprarServiceResponseType">
+    	<sequence>
+    		<element name="comprarRS" type="tns:ComprarRSType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ComprarRSType">
+    	<sequence>
+    		<element name="isError" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="TipoRopaType">
+    	<sequence>
+    		<element name="tipo" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="cantidad" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>
